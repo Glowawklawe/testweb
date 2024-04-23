@@ -1,5 +1,8 @@
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 900 */
+/*display: inline-flex; <span> inline elemnet nie dziala wysokosc i szerokosc*/
+/*justify-content: center;  aligne along the primary axis (default horizontal axis) */
+/*align-items: center;  aligne along the secondary axis (default vertical axis) */
 
 .inter-<uniquifier> {
   font-family: "Inter", sans-serif;
@@ -132,4 +135,21 @@ a{
   .list--tick .list__item{
     padding-left: 0;
   }
+}
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary{
+  fill:var(--color-priamry);
+}
+.icon-container{
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex; /*<span> inline elemnet nie dziala wysokosc i szerokosc*/
+  justify-content: center; /* aligne along the primary axis (default horizontal axis) */
+  align-items: center; /* aligne along the secondary axis (default vertical axis) */
 }
