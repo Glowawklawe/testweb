@@ -329,3 +329,17 @@ a{
   }
   
 }
+/* Media */
+.media {
+  display: flex;
+}
+
+.meida__title{
+  margin-top: 0;
+}
+.media__body{
+  margin: 0 2rem; /* 0 wertykalnie, 2rem horyzontalnie */
+}
+.media__image{
+  margin-top: 1rem;
+}
