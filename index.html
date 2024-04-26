@@ -20,28 +20,18 @@
     />
   </head>
   <body>
-    <section class="block container">
-      <header class="block_header">
-        <h2 class="block_heading">Heading</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-          praesentium laboriosam architecto repellat, voluptatibus ad libero
-          iusto fugit asperiores ipsum, error exercitationem veniam repellendus
-          culpa porro quia dolorem labore assumenda.
-        </p>
-      </header>
-    </section>
-      <section class="block block--dark block--skewed-left">
-          <div class="container"></div>
-          <h2 class="block_heading">Heading</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-            praesentium laboriosam architecto repellat, voluptatibus ad libero
-            iusto fugit asperiores ipsum, error exercitationem veniam
-            repellendus culpa porro quia dolorem labore assumenda.
-          </p>
-      </section>
-    </div>
+    <nav class="nav collapsible">
+      <a class="nav_brand" href="/"><img src="images/logo.svg" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPN</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="js/main.js"></script>
   </body>
 </html>
