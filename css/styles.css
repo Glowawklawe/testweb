@@ -527,6 +527,7 @@ a{
   margin-top: 0;
   font-size: 3rem;
 }
+
 .collapsible__chevron{
   transform: rotate(-90deg);
   transition: transform 0.3s;
@@ -731,4 +732,74 @@ a{
     width: auto;
     max-width: 700px;
   }
+}
+/* Footer */
+.footer{
+  background: #232323;
+}
+.footer a{
+  color: #777 ;
+  transition: color 0.5s;
+}
+.footer a:hover{
+  color: white;
+}
+.footer__section{
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list{
+  margin: 0;
+}
+
+.footer__heading{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer__brand{
+  margin-top: 5rem;
+  text-align:center;
+}
+ .footer__brand img{
+  /* T0D0: Consider refactoring this and applying it to all images.*/
+  width: 100%;
+  max-width: 230px;
+ }
+.footer_copyright{
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: .3;
+}
+@media screen and (min-width: 768px) {
+  .footer__sections{
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+  }
+
+  .footer .collapsible__chevron{
+    display: none;
+  }
+
+  .footer .collapsible__content{
+    opacity: 1;
+    max-height: 100%;
+  }
+  
+  .footer__brand{
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer_copyright{
+    font-size: 1.5rem;
+  }
+
+   .footer__section{
+    border: 0;
+   }
+
+   .footer__heading{
+    font-size: 1;
+   }
 }
